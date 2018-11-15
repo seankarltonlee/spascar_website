@@ -4,8 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStroopwafel,
-  faAlignJustify,
-  faLinkedin
+  faAlignJustify
 } from "@fortawesome/free-solid-svg-icons";
 library.add(faStroopwafel, faAlignJustify);
 
@@ -17,6 +16,7 @@ class App extends Component {
           <NavBar />
         </div>
         <JumboTron />
+        <LogoArea />
         <TrailerArea />
         <Features />
         <TeamList />
@@ -77,14 +77,70 @@ const JumboTron = () => {
   );
 };
 
+const LogoArea = () => {
+  return (
+    <div className="logoArea">
+      <div className="row d-flex align-items-center h-100">
+        <div className="col-sm-4">
+          <a
+            className="mx-auto d-block text-center"
+            href="https://www.oculus.com/"
+          >
+            <img
+              alt=""
+              className="img-responsive center-block logoLinks"
+              src="https://i0.wp.com/vrhymes.com/wp-content/uploads/2017/12/oculus-vr-logo.png?zoom=2&resize=180%2C39&ssl=1"
+            />
+          </a>
+        </div>
+        <div className="col-sm-4">
+          <a
+            className="mx-auto d-block text-center"
+            href="https://unity3d.com/"
+          >
+            <img
+              alt=""
+              className="logoLinks"
+              src="https://i0.wp.com/vrhymes.com/wp-content/uploads/2017/12/unity-logo.png?zoom=2&resize=180%2C65&ssl=1"
+            />
+          </a>
+        </div>
+        <div className="col-sm-4">
+          <a
+            className="mx-auto d-block text-center"
+            href="http://gamepipe.usc.edu/"
+          >
+            <img
+              alt=""
+              className=" logoLinks"
+              src="http://gamepipe.usc.edu/resources/Resources/VsoE-GamePipe-Logo.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const TrailerArea = () => {
   return (
     <div className="container trailerArea">
       <ScrollableAnchor id={"trailer"}>
         <div />
       </ScrollableAnchor>
+
+      <h1 className="sectionHeader">Trailer</h1>
       <div className="d-flex align-items-center justify-content-center">
-        <h1 className="sectionHeader">Trailer</h1>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1roy4o4tqQM"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
       </div>
     </div>
   );
@@ -115,6 +171,7 @@ const TeamList = () => {
           <div className="col-md-4 mb-5">
             <div className="card">
               <img
+                alt=""
                 className="profileIMG mx-auto"
                 src="https://media.discordapp.net/attachments/482246612387627030/511294086632702003/image5.jpg?width=740&height=935"
               />
@@ -130,13 +187,20 @@ const TeamList = () => {
           <div className="col-md-4 mb-5">
             <div className="card">
               <img
+                alt=""
                 className="profileIMG mx-auto"
                 src="https://www.w3schools.com/howto/img_avatar.png"
               />
               <div className="container">
                 <h2>Mike Han</h2>
                 <span className="linkedinIcon">
-                  <i className="fab fa-linkedin" />
+                  <a
+                    href="https://www.linkedin.com/in/mike-han-a914308b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-linkedin" />
+                  </a>
                 </span>
               </div>
             </div>
@@ -145,6 +209,7 @@ const TeamList = () => {
           <div className="col-md-4 mb-5">
             <div className="card">
               <img
+                alt=""
                 className="profileIMG mx-auto"
                 src="https://media.licdn.com/dms/image/C5603AQFz6LqNpXBScA/profile-displayphoto-shrink_800_800/0?e=1547683200&v=beta&t=CwS20gxS2T3UEqJu0y_ZFuuLl2sGUnFAvcqfMKCAcKs"
               />
@@ -154,6 +219,7 @@ const TeamList = () => {
                   <a
                     href="https://www.linkedin.com/in/robert-shane-b7b76b3b/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-linkedin" />
                   </a>
@@ -165,13 +231,20 @@ const TeamList = () => {
           <div className="offset-md-1 col-md-5 mb-5">
             <div className="card">
               <img
+                alt=""
                 className="profileIMG mx-auto"
                 src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/39036842_1355268684606847_5507566692579934208_n.jpg?_nc_cat=102&_nc_ht=scontent-sjc3-1.xx&oh=37bbd6316c76fb66e14ebc2cab55a2df&oe=5C813C22"
               />
               <div className="container">
                 <h2>Sean Lee</h2>
                 <span className="linkedinIcon">
-                  <i className="fab fa-linkedin" />
+                  <a
+                    href="https://www.linkedin.com/in/seankarltonlee/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-linkedin" />
+                  </a>
                 </span>
               </div>
             </div>
@@ -180,6 +253,7 @@ const TeamList = () => {
           <div className="col-md-5 mb-5">
             <div className="card">
               <img
+                alt=""
                 className="profileIMG mx-auto"
                 src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/27332357_1970517419938358_299966863900634877_n.jpg?_nc_cat=108&_nc_ht=scontent-sjc3-1.xx&oh=0466a67d77d7bf2d886582d733f6fe5c&oe=5C6692AD"
               />

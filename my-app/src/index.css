@@ -29,6 +29,10 @@ code {
   color: white;
 }
 
+.jumbotron {
+  margin-bottom: 0;
+}
+
 .paral {
   min-height: 50em;
   background-attachment: fixed;
@@ -44,6 +48,16 @@ code {
 .paralsec {
   /* background-image: url("./spaceBG.jpg"); */
   background-color: black;
+}
+
+.logoLinks {
+  height: 3em;
+  width: auto;
+}
+
+.logoArea {
+  background-color: black;
+  height: 15em;
 }
 
 .trailerArea {
