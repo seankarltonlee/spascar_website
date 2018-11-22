@@ -6,6 +6,10 @@ import {
   faStroopwafel,
   faAlignJustify
 } from "@fortawesome/free-solid-svg-icons";
+import asteroidSS from "./screenshots/asteroids.png";
+import cockpitSS from "./screenshots/cockpit.png";
+import homebaseSS from "./screenshots/homebase.png";
+import sickmenuSS from "./screenshots/sickmenu.png";
 library.add(faStroopwafel, faAlignJustify);
 
 class App extends Component {
@@ -20,10 +24,15 @@ class App extends Component {
         <TrailerArea />
         <Features />
         <TeamList />
+        <FooterBar />
       </div>
     );
   }
 }
+
+const FooterBar = () => {
+  return <div className="footerArea">Space Force</div>;
+};
 
 const NavBar = () => {
   return (
@@ -131,11 +140,11 @@ const TrailerArea = () => {
 
       <h1 className="sectionHeader">Trailer</h1>
       <div className="d-flex align-items-center justify-content-center">
-        <div class="embed-responsive embed-responsive-16by9">
+        <div className="embed-responsive embed-responsive-16by9">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/1roy4o4tqQM"
+            src="https://www.youtube.com/embed/wK06wqISh_4"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -152,8 +161,55 @@ const Features = () => {
       <ScrollableAnchor id={"features"}>
         <div> </div>
       </ScrollableAnchor>
-      <div className="d-flex align-items-center justify-content-center">
-        <h1 className="sectionHeader">Features</h1>
+      <h1 className="sectionHeader">Features</h1>
+      <div className="">
+        <div className="row">
+          <div className="card shadow-lg col-md-6">
+            <img
+              className="card-img-top  featuresimg"
+              src={asteroidSS}
+              alt=""
+            />
+            <div className="card-body">
+              <p className="card-text">
+                Fly through asteroid fields and navigate the course!
+              </p>
+            </div>
+          </div>
+          <div className="card shadow-lg col-md-6">
+            <img className="card-img-top  featuresimg" src={cockpitSS} alt="" />
+            <div className="card-body">
+              <p className="card-text">
+                You'll take full control in a cockpit of the X-Wing!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="card shadow-lg col-md-6">
+            <img
+              className="card-img-top  featuresimg"
+              src={homebaseSS}
+              alt=""
+            />
+            <div className="card-body">
+              <p className="card-text">Become the commander of the fleet!</p>
+            </div>
+          </div>
+          <div className="card shadow-lg col-md-6">
+            <img
+              className="card-img-top  featuresimg"
+              src={sickmenuSS}
+              alt=""
+            />
+            <div className="card-body">
+              <p className="card-text">
+                Feeling sick? Tailor your flight experience exactly to your
+                needs!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -172,7 +228,7 @@ const TeamList = () => {
             <div className="card">
               <img
                 alt=""
-                className="profileIMG mx-auto"
+                className="mikeIMG mx-auto"
                 src="https://media.discordapp.net/attachments/482246612387627030/511294086632702003/image5.jpg?width=740&height=935"
               />
               <div className="container">
@@ -188,8 +244,8 @@ const TeamList = () => {
             <div className="card">
               <img
                 alt=""
-                className="profileIMG mx-auto"
-                src="https://www.w3schools.com/howto/img_avatar.png"
+                className="mx-auto mikeIMG"
+                src="https://media.discordapp.net/attachments/482246612387627030/512897369814335488/Han_Michael.jpg"
               />
               <div className="container">
                 <h2>Mike Han</h2>
