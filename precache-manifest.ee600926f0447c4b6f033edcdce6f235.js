@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/spascar_website/static/css/main.2a7f0eae.chunk.css"
   },
   {
-    "revision": "1835e51a6dc89d7ae7251f318cc86ae4",
+    "revision": "e20164626d38f005e640366f42f128e3",
     "url": "/spascar_website/index.html"
   }
 ];
