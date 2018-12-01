@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/spascar_website/precache-manifest.dc8dad80c3c524677792674c0adf2f33.js"
+  "/spascar_website/precache-manifest.61879ac72c5032ea5d67eca03edb024a.js"
 );
 
 workbox.clientsClaim();

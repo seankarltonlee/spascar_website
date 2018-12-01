@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/spascar_website/static/js/runtime~main.4944561f.js"
   },
   {
-    "revision": "c21a0599f551e5bd4cd5",
-    "url": "/spascar_website/static/js/main.c21a0599.chunk.js"
+    "revision": "b18a315a859477065cd7",
+    "url": "/spascar_website/static/js/main.b18a315a.chunk.js"
   },
   {
     "revision": "795935fa0a4682b290af",
     "url": "/spascar_website/static/js/1.795935fa.chunk.js"
   },
   {
-    "revision": "c21a0599f551e5bd4cd5",
+    "revision": "b18a315a859477065cd7",
     "url": "/spascar_website/static/css/main.2a7f0eae.chunk.css"
   },
   {
-    "revision": "62c56f3ebca66709938b521c995cfeb1",
+    "revision": "9e06df9d8712b038265c39fca918ef24",
     "url": "/spascar_website/index.html"
   }
 ];
