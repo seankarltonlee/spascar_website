@@ -1,7 +1,7 @@
 {
   "main.css": "/spascar_website/static/css/main.2a7f0eae.chunk.css",
-  "main.js": "/spascar_website/static/js/main.32771191.chunk.js",
-  "main.js.map": "/spascar_website/static/js/main.32771191.chunk.js.map",
+  "main.js": "/spascar_website/static/js/main.c21a0599.chunk.js",
+  "main.js.map": "/spascar_website/static/js/main.c21a0599.chunk.js.map",
   "static/js/1.795935fa.chunk.js": "/spascar_website/static/js/1.795935fa.chunk.js",
   "static/js/1.795935fa.chunk.js.map": "/spascar_website/static/js/1.795935fa.chunk.js.map",
   "runtime~main.js": "/spascar_website/static/js/runtime~main.4944561f.js",
@@ -13,6 +13,6 @@
   "static/media/cockpit.png": "/spascar_website/static/media/cockpit.83694fc4.png",
   "static/css/main.2a7f0eae.chunk.css.map": "/spascar_website/static/css/main.2a7f0eae.chunk.css.map",
   "index.html": "/spascar_website/index.html",
-  "precache-manifest.ee600926f0447c4b6f033edcdce6f235.js": "/spascar_website/precache-manifest.ee600926f0447c4b6f033edcdce6f235.js",
+  "precache-manifest.dc8dad80c3c524677792674c0adf2f33.js": "/spascar_website/precache-manifest.dc8dad80c3c524677792674c0adf2f33.js",
   "service-worker.js": "/spascar_website/service-worker.js"
 }
